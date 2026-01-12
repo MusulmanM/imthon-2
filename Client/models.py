@@ -20,7 +20,6 @@ class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     dentists = models.ForeignKey(Dentists, on_delete=models.CASCADE)
     clinic = models.ForeignKey(Clinic, on_delete=models.CASCADE)
-    client = models.ForeignKey(Client, on_delete=models.CASCADE)
     appointment_time = models.TimeField(blank=True, null=True)
     status = models.CharField(
         max_length=20,
